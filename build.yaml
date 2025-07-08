@@ -24,4 +24,4 @@ include:
   - board: nice_nano_v2
     shield: sofle_right
   - board: nice_nano_v2
-    shield: dongle_display
+    shield: sweep_central_dongle dongle_display
