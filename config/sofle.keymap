@@ -48,7 +48,7 @@
                           &none   &kp LEFT_GUI  &kp LEFT_ALT  &mo 1   &kp SPACE     &kp ENTER  &mo 0   &none   &kp RALT   &kp RGUI
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+            sensor-bindings = <&inc_dec_kp K_VOLUME_UP K_VOLUME_DOWN>;
         };
 
         symbols_layer {
