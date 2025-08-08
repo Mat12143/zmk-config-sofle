@@ -73,11 +73,11 @@
 
         arrow_layer {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans    &trans    &trans  &trans     &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans    &trans    &trans  &trans     &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &none   &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans    &trans    &trans  &trans     &trans  &trans
-                &trans  &trans  &trans  &trans  &trans    &trans  &trans    &trans    &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &kp C_AC_PRINT  &trans    &trans  &trans     &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans          &trans    &trans  &trans     &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &kp LEFT        &kp DOWN  &kp UP  &kp RIGHT  &none   &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans          &trans    &trans  &trans     &trans  &trans
+                &trans  &trans  &trans  &trans  &trans    &trans  &trans          &trans    &trans  &trans
             >;
         };
 
