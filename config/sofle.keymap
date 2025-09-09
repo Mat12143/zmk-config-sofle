@@ -65,7 +65,7 @@
 
         symbol_layers {
             bindings = <
-&trans  &trans    &trans     &trans    &trans      &trans                           &trans     &trans    &trans         &trans            &none         &none
+&trans  &trans    &trans     &trans    &trans      &trans                           &trans     &trans    &trans         &trans            &trans        &trans
 &trans  &kp EXCL  &kp AT     &kp HASH  &kp DOLLAR  &kp PERCENT                      &kp PLUS   &kp LBKT  &kp RBKT       &kp GRAVE         &kp MINUS     &kp UNDER
 &trans  &none     &kp CARET  &kp LPAR  &kp RPAR    &kp AMPERSAND                    &kp EQUAL  &kp LBRC  &kp RBRC       &kp TILDE         &kp COLON     &kp DOUBLE_QUOTES
 &trans  &none     &none      &none     &none       &kp ASTERISK   &none     &none   &none      &none     &kp LESS_THAN  &kp GREATER_THAN  &kp QUESTION  &kp PIPE
