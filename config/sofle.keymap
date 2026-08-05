@@ -21,7 +21,7 @@
 
         Settings {
             if-layers = <1 2>;
-            then-layer = <3>;
+            then-layer = <4>;
         };
     };
 
@@ -83,24 +83,6 @@
             >;
         };
 
-        adjust_layer {
-            // ----------------------------------------------------------------------------------------------------------------------------
-            // | BTCLR  |  BT1    |  BT2    |   BT3   |   BT4   |   BT5   |                  |      |      |       |      |       |       |
-            // | EXTPWR | RGB_HUD | RGB_HUI | RGB_SAD | RGB_SAI | RGB_EFF |                  |      |      |       |      |       |       |
-            // |        | RGB_BRD | RGB_BRI |         |         |         |                  |      |      |       |      |       |       |
-            // |        |         |         |         |         |         | RGB_TOG | |      |      |      |       |      |       |       |
-            //                    |         |         |         |         |         | |      |      |      |       |      |
-
-            display-name = "adjust";
-            bindings = <
-&bt BT_CLR    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                  &sys_reset  &none  &none  &none  &none  &none
-&none         &none         &none         &none         &none         &tog 4                        &none       &none  &none  &none  &none  &none
-&kp CAPSLOCK  &none         &none         &none         &none         &none                         &none       &none  &none  &none  &none  &none
-&none         &none         &none         &none         &none         &none         &none    &none  &none       &none  &none  &none  &none  &none
-                            &none         &none         &none         &none         &none    &none  &none       &none  &none  &none
-            >;
-        };
-
         gaming {
             display-name = "gaming";
             bindings = <
@@ -112,6 +94,24 @@
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
+        };
+
+        adjust_layer {
+            // ----------------------------------------------------------------------------------------------------------------------------
+            // | BTCLR  |  BT1    |  BT2    |   BT3   |   BT4   |   BT5   |                  |      |      |       |      |       |       |
+            // | EXTPWR | RGB_HUD | RGB_HUI | RGB_SAD | RGB_SAI | RGB_EFF |                  |      |      |       |      |       |       |
+            // |        | RGB_BRD | RGB_BRI |         |         |         |                  |      |      |       |      |       |       |
+            // |        |         |         |         |         |         | RGB_TOG | |      |      |      |       |      |       |       |
+            //                    |         |         |         |         |         | |      |      |      |       |      |
+
+            display-name = "adjust";
+            bindings = <
+&bt BT_CLR    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                  &sys_reset  &none  &none  &none  &none  &none
+&none         &none         &none         &none         &none         &tog 3                        &none       &none  &none  &none  &none  &none
+&kp CAPSLOCK  &none         &none         &none         &none         &none                         &none       &none  &none  &none  &none  &none
+&none         &none         &none         &none         &none         &none         &none    &none  &none       &none  &none  &none  &none  &none
+                            &none         &none         &none         &none         &none    &none  &none       &none  &none  &none
+            >;
         };
     };
 };
